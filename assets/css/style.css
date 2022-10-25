@@ -1,0 +1,81 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1, h2 {
+    margin: 3px;
+    font-family: "Segoe UI", "Roboto Slab", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    text-align: center;
+}
+
+#answer-sec, #end-sec, #highscores-sec, #result-sec {
+    display: none;
+}
+
+#timer {
+    font-weight: bolder;
+}
+
+hr {
+    opacity: 0.75;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+p, label, li {
+    text-align: center;
+    font-family: 'Open Sans', serif;
+}
+
+ul {
+    list-style-type:none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+li {
+    font-size: larger;
+}
+
+li,li button {
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    background-color:  #2e86c1;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    border: 0px;
+    cursor: pointer;
+    font-family: 'Open Sans', serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+.menu-button {
+    padding: 0.5em 0.5em;
+}
+
+#result-sec hr {
+    opacity: 0.25;
+    width: 50%;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Test</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <button onclick="showHighscores()" class="menu-button" id="highscore-button">View Highscores</button>
+        <p id="timer">Time: 75</p>
+    </header>
+    <hr>
+    <main>
+        <h1>Coding Quiz!</h1>
+
+        <section id="start-sec">
+            <p>Try to answer the following code related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+            <button onclick="startQuiz()">Start Quiz</button>
+        </section>
+
+        <section id="answer-sec">
+            <ul id="answer-list">
+                <li><button class="ans-button"></button></li>
+                <li><button class="ans-button"></button></li>
+                <li><button class="ans-button"></button></li>
+                <li><button class="ans-button"></button></li>
+            </ul>
+        </section>
+
+        <section id="end-sec">
+            <p id="score-tally"></p>
+            <label for="initials">Enter Initials:</label>
+            <input type="text" name="initials" id="initials" maxlength="3">
+            <button onclick="updateHighscores()" class="menu-button" id="submit">Submit</button>
+        </section>
+
+        <section id="highscores-sec">
+            <ol id="highscores-list">
+            </ol>
+            <button onclick="showStart()" class="menu-button">Back to start</button>
+            <button onclick = "clearHighscores()" class="menu-button">Clear Highscores</button>
+        </section>
+        <section id="result-sec">
+            <hr id="result-hr">
+            <h2 id="result"></h2>
+        </section>
+    </main>
+</body>
+</html>
